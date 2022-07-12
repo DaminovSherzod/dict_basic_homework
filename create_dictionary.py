@@ -7,4 +7,9 @@ def create_dictionary(key, value):
     Returns:
         dict: dictionary with keys and values
     """
-    return
+    x = {}
+    for i in range(len(key)):
+        x[key[i]] = value[i]
+    return x  
+        
+print(create_dictionary([1,2,3],["one","two","three"]))    
